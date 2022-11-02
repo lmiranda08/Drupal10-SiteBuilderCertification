@@ -1,0 +1,14 @@
+uuid: 7620fabe-3c11-4e85-84fc-866afe88a0ca
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - l.miranda0892@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

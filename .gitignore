@@ -1,0 +1,66 @@
+# Ignore paths that contain user-generated content.
+web/files
+web/sites/*/files
+web/sites/*/private
+web/core/
+web/modules/contrib/
+web/themes/contrib/
+web/profiles/contrib/
+web/libraries/
+vendor
+# Editor and language files.
+.idea/
+.project/
+.bundle/
+
+# Local development
+web/sites/*/services.local.yml
+web/sites/default/settings.local.php
+web/sites/development.services.local.yml
+web/sites/guilfordcollege.dd
+web/sites/default/drushrc.php
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+
+# Logs and databases #
+######################
+*.log
+*.sql
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon
+
+Thumbs.db
+._*
+
+# Things in the core directory that Drupal 8 commits in the repository.
+!core/**/*.gz
+
+# Debug
+debug.php
+web/modules/contrib/examples
+config_php
+
+# Dependency directory
+node_modules
+
+# Testing locally
+web/sites/simpletest/*
+
+# Exclude robots.txt
+web/robots.txt
+/web/core/
