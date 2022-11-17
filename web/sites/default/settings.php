@@ -793,5 +793,11 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 
  if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
    include $app_root . '/' . $site_path . '/settings.local.php';
+ }else{
+   $settings['trusted_host_patterns'] = [
+     '^d9sitebuildercertification\.luismimiranda\.com$',
+     '^www\.d9sitebuildercertification\.luismimiranda\.com$',
+   ];
  }
 $settings['config_sync_directory'] = 'sites/default/config__WU4mi40LyZkZFpajEd4sffqHG6JHXLGYYR0pGOPtz5zGWhmnn8hzOr8j1A9fFd_aVE1d8ucJw/sync';
+
