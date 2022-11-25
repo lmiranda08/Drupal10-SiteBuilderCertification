@@ -89,7 +89,16 @@
  * @endcode
  */
 $databases = [];
-
+$databases['default']['default'] = [
+  'database' => 'drupal9',
+  'username' => 'drupal9_user',
+  'password' => 'Lmiranda0892',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+];
 /**
  * Customizing database settings.
  *
@@ -196,16 +205,16 @@ $databases = [];
  *
  * Sample Database configuration format for a driver in a contributed module:
  * @code
- *   $databases['default']['default'] = [
- *     'driver' => 'my_driver',
- *     'namespace' => 'Drupal\my_module\Driver\Database\my_driver',
- *     'autoload' => 'modules/my_module/src/Driver/Database/my_driver/',
- *     'database' => 'databasename',
- *     'username' => 'sqlusername',
- *     'password' => 'sqlpassword',
- *     'host' => 'localhost',
- *     'prefix' => '',
- *   ];
+// *   $databases['default']['default'] = [
+// *     'driver' => 'my_driver',
+// *     'namespace' => 'Drupal\my_module\Driver\Database\my_driver',
+// *     'autoload' => 'modules/my_module/src/Driver/Database/my_driver/',
+// *     'database' => 'databasename',
+// *     'username' => 'sqlusername',
+// *     'password' => 'sqlpassword',
+// *     'host' => 'localhost',
+// *     'prefix' => '',
+// *   ];
  * @endcode
  */
 
@@ -527,7 +536,7 @@ $settings['file_public_path'] = 'sites/default/files';
  * See https://www.drupal.org/documentation/modules/file for more information
  * about securing private files.
  */
-$settings['file_private_path'] = 'sites/default/files/private';
+#$settings['file_private_path'] = 'sites/default/files/private';
 
 /**
  * Temporary file path:
