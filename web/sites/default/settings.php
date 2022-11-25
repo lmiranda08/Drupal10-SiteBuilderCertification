@@ -221,6 +221,7 @@ $databases = [];
  * its location.
  */
 # $settings['config_sync_directory'] = '/directory/outside/webroot';
+$settings['config_sync_directory'] = 'sites/default/config__WU4mi40LyZkZFpajEd4sffqHG6JHXLGYYR0pGOPtz5zGWhmnn8hzOr8j1A9fFd_aVE1d8ucJw/sync';
 
 /**
  * Settings:
@@ -488,7 +489,7 @@ $settings['update_free_access'] = FALSE;
  * must exist and be writable by Drupal. This directory must be relative to
  * the Drupal installation directory and be accessible over the web.
  */
-# $settings['file_public_path'] = 'sites/default/files';
+$settings['file_public_path'] = 'sites/default/files';
 
 /**
  * Additional public file schemes:
@@ -526,7 +527,7 @@ $settings['update_free_access'] = FALSE;
  * See https://www.drupal.org/documentation/modules/file for more information
  * about securing private files.
  */
-# $settings['file_private_path'] = '';
+$settings['file_private_path'] = 'sites/default/files/private';
 
 /**
  * Temporary file path:
@@ -539,7 +540,7 @@ $settings['update_free_access'] = FALSE;
  *
  * @see \Drupal\Component\FileSystem\FileSystem::getOsTemporaryDirectory()
  */
-# $settings['file_temp_path'] = '/tmp';
+$settings['file_temp_path'] = '/tmp';
 
 /**
  * Session write interval:
@@ -799,5 +800,3 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
      '^www\.d9sitebuildercertification\.luismimiranda\.com$',
    ];
  }
-$settings['config_sync_directory'] = 'sites/default/config__WU4mi40LyZkZFpajEd4sffqHG6JHXLGYYR0pGOPtz5zGWhmnn8hzOr8j1A9fFd_aVE1d8ucJw/sync';
-
