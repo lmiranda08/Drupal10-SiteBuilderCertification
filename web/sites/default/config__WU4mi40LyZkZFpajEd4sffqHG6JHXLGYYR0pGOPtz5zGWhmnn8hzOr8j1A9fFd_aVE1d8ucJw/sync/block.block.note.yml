@@ -1,0 +1,25 @@
+uuid: b88183ca-b60f-4f9f-82c4-98d41d07c83b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d7f338cc-8fd8-4794-9de3-76bc738cc3ea'
+  module:
+    - block_content
+  theme:
+    - olivero
+id: note
+theme: olivero
+region: hero
+weight: -8
+provider: null
+plugin: 'block_content:d7f338cc-8fd8-4794-9de3-76bc738cc3ea'
+settings:
+  id: 'block_content:d7f338cc-8fd8-4794-9de3-76bc738cc3ea'
+  label: Note
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

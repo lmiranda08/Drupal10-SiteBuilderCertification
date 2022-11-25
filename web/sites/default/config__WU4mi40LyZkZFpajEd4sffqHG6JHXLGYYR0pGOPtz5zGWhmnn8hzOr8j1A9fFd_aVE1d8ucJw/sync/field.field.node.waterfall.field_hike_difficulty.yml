@@ -1,0 +1,29 @@
+uuid: bab50aba-b53c-47c9-9a4b-89f300395151
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hike_difficulty
+    - node.type.waterfall
+    - taxonomy.vocabulary.hiking_difficulty
+id: node.waterfall.field_hike_difficulty
+field_name: field_hike_difficulty
+entity_type: node
+bundle: waterfall
+label: 'Hike difficulty'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      hiking_difficulty: hiking_difficulty
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

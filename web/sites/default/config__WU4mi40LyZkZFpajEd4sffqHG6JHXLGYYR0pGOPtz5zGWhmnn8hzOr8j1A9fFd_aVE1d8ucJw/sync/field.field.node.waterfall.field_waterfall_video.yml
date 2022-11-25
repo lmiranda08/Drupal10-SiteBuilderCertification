@@ -1,0 +1,29 @@
+uuid: fee0b22c-0398-4611-87e0-f8f17baddb8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_waterfall_video
+    - media.type.remote_video
+    - node.type.waterfall
+id: node.waterfall.field_waterfall_video
+field_name: field_waterfall_video
+entity_type: node
+bundle: waterfall
+label: 'Waterfall video'
+description: 'A link to a youtube or vimeo video which is rendered as a full video.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

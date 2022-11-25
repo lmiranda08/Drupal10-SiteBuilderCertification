@@ -1,0 +1,8 @@
+uuid: 6161c46d-7582-4241-b247-ea6c253f7336
+langcode: en
+status: true
+dependencies: {  }
+name: Location
+vid: location
+description: 'Terms to help categorize by location.'
+weight: 0

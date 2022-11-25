@@ -1,0 +1,20 @@
+uuid: 937ab92c-1519-45ab-b2b5-9a4c7f340ee2
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - taxonomy
+id: taxonomy_term.field_difficulty_icon
+field_name: field_difficulty_icon
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

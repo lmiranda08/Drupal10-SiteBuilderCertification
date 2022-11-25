@@ -1,0 +1,21 @@
+uuid: 286f6533-e80a-483a-a3c9-6d97f599a249
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_walking_and_driving_instru
+    - node.type.waterfall
+  module:
+    - text
+id: node.waterfall.field_walking_and_driving_instru
+field_name: field_walking_and_driving_instru
+entity_type: node
+bundle: waterfall
+label: 'Walking and driving instructions'
+description: 'Details on how to arrive to waterfall.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

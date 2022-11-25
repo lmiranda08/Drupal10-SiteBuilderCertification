@@ -1,0 +1,29 @@
+uuid: ee747cf0-1f14-4aec-b7f9-086c0970ddef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_waterfall_location
+    - node.type.waterfall
+    - taxonomy.vocabulary.location
+id: node.waterfall.field_waterfall_location
+field_name: field_waterfall_location
+entity_type: node
+bundle: waterfall
+label: 'Waterfall location'
+description: 'Select the general location of the waterfall.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      location: location
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
