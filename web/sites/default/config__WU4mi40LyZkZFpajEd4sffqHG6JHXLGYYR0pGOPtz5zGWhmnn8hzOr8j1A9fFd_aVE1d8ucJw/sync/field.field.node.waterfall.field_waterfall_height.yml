@@ -9,7 +9,7 @@ id: node.waterfall.field_waterfall_height
 field_name: field_waterfall_height
 entity_type: node
 bundle: waterfall
-label: 'Waterfall height (meters)'
+label: 'Waterfall height'
 description: 'Enter height of waterfall in meters.'
 required: false
 translatable: false
@@ -19,5 +19,5 @@ settings:
   min: 0
   max: null
   prefix: ''
-  suffix: meters
+  suffix: ' meters'
 field_type: integer

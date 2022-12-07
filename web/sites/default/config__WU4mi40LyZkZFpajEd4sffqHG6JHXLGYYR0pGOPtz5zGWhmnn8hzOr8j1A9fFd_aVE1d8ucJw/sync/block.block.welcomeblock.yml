@@ -11,7 +11,7 @@ dependencies:
 id: welcomeblock
 theme: olivero
 region: sidebar
-weight: 0
+weight: -7
 provider: null
 plugin: 'block_content:0e836eed-fbc6-4eb6-9a66-f909bd3e8dbd'
 settings:

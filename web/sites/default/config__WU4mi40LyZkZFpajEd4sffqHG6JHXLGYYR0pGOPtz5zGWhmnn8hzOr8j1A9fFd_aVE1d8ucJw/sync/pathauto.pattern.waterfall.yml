@@ -5,14 +5,14 @@ dependencies:
   module:
     - node
 id: waterfall
-label: Waterfall
+label: 'Waterfall URL'
 type: 'canonical_entities:node'
 pattern: 'waterfall/[node:title]'
 selection_criteria:
-  5fb27a56-cb94-4371-aa4f-3f7c59bf078d:
+  c3694bb4-b005-436e-8f26-d5457e9c6be1:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 5fb27a56-cb94-4371-aa4f-3f7c59bf078d
+    uuid: c3694bb4-b005-436e-8f26-d5457e9c6be1
     context_mapping:
       node: node
     bundles:
