@@ -90,7 +90,7 @@
  */
 $databases = [];
 $databases['default']['default'] = [
-  'database' => 'drupal9',
+  'database' => 'drupal_certification',
   'username' => 'drupal9_user',
   'password' => 'Lmiranda0892',
   'prefix' => '',
