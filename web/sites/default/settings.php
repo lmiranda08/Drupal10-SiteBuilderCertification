@@ -89,16 +89,7 @@
  * @endcode
  */
 $databases = [];
-$databases['default']['default'] = [
-  'database' => 'drupal_certification',
-  'username' => 'drupal9_user',
-  'password' => 'Lmiranda0892!',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-];
+
 /**
  * Customizing database settings.
  *
@@ -230,8 +221,6 @@ $databases['default']['default'] = [
  * its location.
  */
 # $settings['config_sync_directory'] = '/directory/outside/webroot';
-$settings['config_sync_directory'] = 'sites/default/config__WU4mi40LyZkZFpajEd4sffqHG6JHXLGYYR0pGOPtz5zGWhmnn8hzOr8j1A9fFd_aVE1d8ucJw/sync';
-
 /**
  * Settings:
  *
@@ -498,7 +487,7 @@ $settings['update_free_access'] = FALSE;
  * must exist and be writable by Drupal. This directory must be relative to
  * the Drupal installation directory and be accessible over the web.
  */
-$settings['file_public_path'] = 'sites/default/files';
+# $settings['file_public_path'] = 'sites/default/files';
 
 /**
  * Additional public file schemes:
@@ -549,7 +538,7 @@ $settings['file_public_path'] = 'sites/default/files';
  *
  * @see \Drupal\Component\FileSystem\FileSystem::getOsTemporaryDirectory()
  */
-$settings['file_temp_path'] = '/tmp';
+# $settings['file_temp_path'] = '/tmp';
 
 /**
  * Session write interval:
@@ -800,6 +789,20 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  *
  * Keep this code block at the end of this file to take full effect.
  */
+
+$databases['default']['default'] = [
+  'database' => 'drupal_certification',
+  'username' => 'drupal9_user',
+  'password' => 'Lmiranda0892!',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+];
+
+$settings['config_sync_directory'] = 'sites/default/config__WU4mi40LyZkZFpajEd4sffqHG6JHXLGYYR0pGOPtz5zGWhmnn8hzOr8j1A9fFd_aVE1d8ucJw/sync';
+
 
  if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
    include $app_root . '/' . $site_path . '/settings.local.php';
