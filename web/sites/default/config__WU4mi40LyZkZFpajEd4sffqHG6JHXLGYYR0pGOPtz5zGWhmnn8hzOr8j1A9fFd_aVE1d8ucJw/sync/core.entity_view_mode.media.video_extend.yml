@@ -1,0 +1,10 @@
+uuid: 88dc3110-9456-4714-88de-ba24943d8e3c
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.video_extend
+label: 'Video Extend'
+targetEntityType: media
+cache: true

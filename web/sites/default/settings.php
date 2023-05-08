@@ -799,6 +799,9 @@ $databases['default']['default'] = [
   'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
+  'init_commands' => [
+    'isolation_level' => 'SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED',
+  ],
 ];
 
 $settings['config_sync_directory'] = 'sites/default/config__WU4mi40LyZkZFpajEd4sffqHG6JHXLGYYR0pGOPtz5zGWhmnn8hzOr8j1A9fFd_aVE1d8ucJw/sync';
