@@ -13,10 +13,8 @@ dependencies:
     - field.field.node.waterfall.field_waterfall_height
     - field.field.node.waterfall.field_waterfall_location
     - field.field.node.waterfall.field_waterfall_video
-    - image.style.thumbnail
     - node.type.waterfall
   module:
-    - image
     - text
     - user
 id: node.waterfall.teaser
@@ -30,25 +28,19 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 1
+    weight: 101
     region: content
-  field_image:
-    type: image
-    label: hidden
-    settings:
-      image_link: content
-      image_style: thumbnail
-      image_loading:
-        attribute: lazy
+  links:
+    settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 100
     region: content
 hidden:
   field_hike_difficulty: true
   field_hike_duration: true
+  field_image: true
   field_official_website: true
   field_walking_and_driving_instru: true
   field_waterfall_height: true
   field_waterfall_location: true
   field_waterfall_video: true
-  links: true
