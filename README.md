@@ -1,4 +1,4 @@
-# Drupal9-SiteBuilderCertification
-Drupa 9 Acquia Site Builder Certification
+# Drupal10-SiteBuilderCertification
+Drupa 10 Acquia Site Builder Certification
 
-URL: http://d9sitebuildercertification.luismimiranda.com
+URL: http://d10sitebuildercertification.luismimiranda.com
