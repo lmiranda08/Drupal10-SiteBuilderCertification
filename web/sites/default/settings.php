@@ -811,7 +811,7 @@ $settings['config_sync_directory'] = 'sites/default/config__WU4mi40LyZkZFpajEd4s
    include $app_root . '/' . $site_path . '/settings.local.php';
  }else{
    $settings['trusted_host_patterns'] = [
-     '^d9sitebuildercertification\.luismimiranda\.com$',
-     '^www\.d9sitebuildercertification\.luismimiranda\.com$',
+     '^d10sitebuildercertification\.luismimiranda\.com$',
+     '^www\.d10sitebuildercertification\.luismimiranda\.com$',
    ];
  }

@@ -1,23 +1,23 @@
-name: d9-sitebuilder
-recipe: drupal9
+name: d10-sitebuilder
+recipe: drupal10
 config:
   webroot: web
   via: nginx
   php: '8.1'
   xdebug: true
   composer_version: '2.1.14'
-  mysql: 5.7
+  database: mysql:8.0
 proxy:
   mailhog:
-    - mail.d9-sitebuilder.lndo.site
+    - mail.d10-sitebuilder.lndo.site
 services:
   appserver:
     config:
       php: devops/php/php.ini
     overrides:
       environment:
-        DRUSH_OPTIONS_URI: https://d9-sitebuilder.lndo.site
-        PHP_IDE_CONFIG: serverName=d9-sitebuilder.lndo.site
+        DRUSH_OPTIONS_URI: https://d10-sitebuilder.lndo.site
+        PHP_IDE_CONFIG: serverName=d10-sitebuilder.lndo.site
   mailhog:
     type: mailhog
     hogfrom:
